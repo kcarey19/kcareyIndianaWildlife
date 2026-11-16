@@ -1,0 +1,162 @@
+* {
+    padding: 10;
+    margin: 0;
+}
+
+/* The body styles the base of the page and adds the background image. */
+body {
+    min-height: 100vh;
+    background-image: url(./background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The nav styles the navigation bar and adds a shadow to it. */
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 0 50px;
+    top: 0;
+    z-index: 1;
+}
+
+/* The nav ul styles the unordered list in the navigation bar and makes it a flex container. */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* The nav li styles the list items in the navigation bar and adds padding to them to create optimal spacing. */
+ul li {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px;
+}
+
+/* The nav li a styles the links in the navigation bar and removes the underline from them which can effect accessibility designs. */
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* The nav li:hover styles the list items in the navigation bar when they are hovered over to create accessibility visuals */
+li:hover {
+    background-color: #73b4e3;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* The header styles the header of the page. */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 100px
+    }
+
+/* The search-bar input[type="text"] styles the search bar input field and adds padding, border, and border-radius to it. */    
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* The search-bar button styles the search bar button by adding padding, background color, color, border, border-radius, and cursor style to it. */
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #73b4e3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* The search-bar button:hover styles the search bar button when it is hovered over to create accessibility visuals. */
+.search-bar button:hover {
+    background-color: #202121;
+    text-decoration: underline;
+}
+
+/* The header styles the header of the page and adds padding, background color, and box-shadow to it. */
+header {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-family: times new roman, serif;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.609);
+    padding: 10px 50px;
+    width: 80%;
+}
+
+/* The h1 styles the main heading of the page and adds font size, text decoration, and font family to it. */
+h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    font-family: times new roman, serif;
+}
+
+/* The h2 styles the subheading of the page and adds font size, text alignment, margin, color, and font family to it. */
+h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 5px;
+    color: #000000c2;
+    font-family: times new roman, serif;
+}
+
+/* The p styles the paragraphs of the page and adds margin, font size, line height, color, display, margin left, margin right, and font family to it. */
+p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    display: flex;
+    margin-left: 80px;
+    margin-right: 20px;
+    font-family: Monospace, monospace;
+}
+
+/* The .state-float-right styles the div that contains the paragraph and image and makes it a flex container. */
+.state-float-right {
+    display: flex;
+    align-items: center;
+    margin-right:auto;
+    gap: 20px;
+}
+
+/* The .state-float-right img styles the image in the div and adds width, height, margin, and outline to it. */
+.state-float-right img {
+    width: 250px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 150px;
+    margin-top: 20px;
+    outline: 2px solid #000000;
+}
+
+.sortable-list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px;
+}   
+
+.animal-name {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: left;
+    padding-left: 70px;
+    background-color: rgba(255, 255, 255, 0.609);
+    padding: 10px 50px;
+    width: 80%;    
+}
