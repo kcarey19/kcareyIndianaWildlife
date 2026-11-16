@@ -144,22 +144,59 @@ p {
     outline: 2px solid #000000;
 }
 
+/* The .sortable-list styles the div that contains the list of animals and makes it a flex container. */
 .sortable-list {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-top: 20px;
-}   
+    gap: 20px;
+    margin: 20px 70px;
+}
+
+.animal-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.609);
+}
 
 .animal-name {
     font-size: 24px;
     font-weight: bold;
-    align-items: left;
-    padding-left: 70px;
-    background-color: rgba(255, 255, 255, 0.609);
-    padding: 10px 50px;
-    width: 80%;    
+    padding: 0;
 }
 
-/* TODO -- Need to stylize the titles, images, and short descriptions of animals in list, 
-also need to research sortable lists to create the button to sort the list by different criteria */
+.animal-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.animal-card p {
+    display: block;
+    margin: 12px 0 0;
+}
+
+.sortable-list img {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    flex-shrink: 0;
+    outline: 2px solid #000000;
+}
+
+@media (max-width: 600px) {
+    .sortable-list {
+        margin: 20px;
+    }
+
+    .animal-card {
+        align-items: flex-start;
+    }
+
+    .sortable-list img {
+        width: 35%;
+    }
+}
