@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Wildlife | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
+</head>
+<body>
+    <nav>
+        <!-- Navigation bar with links to different pages on the website beside search bar-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a id="random-nav-link" href="#">Random Animal</a></li>
+        </ul>
+
+        <!-- Search bar to locate specific animals on the website, instead of having to scroll and browse included sortable list-->
+        <div class="search-bar">
+            <form>
+                <label for="animal-search">Search animals:</label>
+                <input id="animal-search" type="text" placeholder="Search animals...">
+                <button type="submit">Go!</button>
+            </form>
+            <div class="search-status" role="status" aria-live="polite" hidden></div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="title-panel">
+            <h1>The Creatures Among Us: Indiana Wildlife</h1>
+            <h2>The Amazing Facts About Indiana's Wildlife</h2>
+        </div>
+        <div class="state-float-right">
+            <!--<p>Some information about the state's geography and climate.</p>-->
+            <p>
+                Here is where the facts about Indiana's climate and terrain would be discussed. This helps explain what types of animals would be found here. You might also see information about the size of the state, population, and the assumed number of animal species that live here. May include some fun facts about things like invasive species, or the relationship between the community and wildlife: example, Animal Control or rescue organizations.  Here is where the facts about Indiana's climate and terrain would be discussed. This helps explain what types of animals would be found here. You might also see information about the size of the state, population, and the assumed number of animal species that live here. May include some fun facts about things like invasive species, or the relationship between the community and wildlife: example, Animal Control or rescue organizations.
+            </p>
+            <!--Image of Indiana's map from "https://gisgeography.com/indiana-map/"-->
+            <img src="images/state.jpg" alt="Graphical Map of Indiana with roads and capital">
+        </div>
+    </header>
+
+    <!-- from here, the page would include a list of animals that are found in Indiana. This list would be sortable by name, type, or other criteria. Each animal would have a link to a page with more information about it. -->
+    <!-- Sort the animal cards by name, population, or location. -->
+    <div class="sort-controls">
+        <label for="animal-sort">Sort by:</label>
+        <select id="animal-sort">
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="population-desc">Population (largest first)</option>
+            <option value="population-asc">Population (smallest first)</option>
+            <option value="location-asc">Location (A–Z)</option>
+        </select>
+    </div>
+
+    <div class="sortable-list">
+        <article class="animal-card" data-population="1" data-location="extirpated">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Gray_Wolf.html">Gray Wolf</a></h3>
+                <p>Some information about the Gray Wolf. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Gray_Wolf.jpg" alt="Gray Wolf Sitting on a Rock" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="130000000" data-location="statewide">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Northern_Cardinal.html">Northern Cardinal</a></h3>
+                <p>Some information about the Northern Cardinal. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Northern_Cardinal.jpg" alt="Bright Red Cardinal sits fluffed up in a snowy background" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="700000" data-location="statewide">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/White_Tailed_Deer.html">White-Tailed Deer</a></h3>
+                <p>Some information about the White-tailed Deer. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/White_Tailed_Deer.jpg" alt="Up-close shot of a White Tailed Deer on a brown background" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="0" data-location="extirpated">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Cotton_Mouth_Snake.html">Cotton Mouth Snake</a></h3>
+                <p>Some information about the Cotton Mouth Snake. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Cotton_Mouth_Snake.jpg" alt="Cotton Mouth Snake coiled and hissing upwards, mouth agape" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="1000" data-location="south-west">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Bobcat.html">Bobcat</a></h3>
+                <p>Some information about the Bobcat. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Bobcat.jpg" alt="Bobcat looking at the camera in full view on a rocky environment" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="750000" data-location="aquatic">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Bluegill.html">Bluegill</a></h3>
+                <p>Some information about the Bluegill. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Bluegill.jpg" alt="Bluegill swimming in murky water" class="animal-image">
+        </article>
+
+        <article class="animal-card" data-population="400" data-location="south">
+            <div class="animal-details">
+                <h3 class="animal-name"><a href="animals/Hellbender_Salamander.html">Hellbender Salamander</a></h3>
+                <p>Some information about the Hellbender Salamander. This would include a brief description of the animal, its habitat, and any interesting facts about it.</p>
+            </div>
+            <img src="images/Hellbender_Salamander.jpg" alt="Hellbender Salamander in a top-down view, in murky water with rocks" class="animal-image">
+        </article>
+    </div>
+<script>
+  const destinations = [
+    "animals/Gray_Wolf.html",
+    "animals/White_Tailed_Deer.html",
+    "animals/Cotton_Mouth_Snake.html",
+    "animals/Bobcat.html",
+    "animals/Bluegill.html",
+    "animals/Hellbender_Salamander.html",
+    "animals/Northern_Cardinal.html"
+  ];
+  const randomLink = document.getElementById("random-nav-link");
+  randomLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Stops the default href from loading immediately
+    const randomIndex = Math.floor(Math.random() * destinations.length);
+    window.location.href = destinations[randomIndex];
+  });
+  const animalList = document.querySelector(".sortable-list");
+const sortControl = document.querySelector("#animal-sort");
+
+function sortAnimals() {
+    const [key, order] = sortControl.value.split("-");
+    const direction = order === "desc" ? -1 : 1;
+    const cards = Array.from(animalList.querySelectorAll(".animal-card"));
+
+    cards.sort((a, b) => {
+        if (key === "population") {
+            return direction *
+                (Number(a.dataset.population) - Number(b.dataset.population));
+        }
+
+        const valueA = key === "name"
+            ? a.querySelector(".animal-name").textContent.trim()
+            : a.dataset.location;
+        const valueB = key === "name"
+            ? b.querySelector(".animal-name").textContent.trim()
+            : b.dataset.location;
+
+        return direction * valueA.localeCompare(valueB);
+    });
+
+    cards.forEach(card => animalList.appendChild(card));
+}
+sortControl.addEventListener("change", sortAnimals);
+sortAnimals();
+</script>
+</body>
+</html>

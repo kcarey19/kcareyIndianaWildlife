@@ -1,0 +1,49 @@
+<!--WIP about page for why i created the website and the overall plan for the end of the project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of your page">
+  <title>About | Indiana Wildlife</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js" defer></script>
+</head>
+<body>
+    <nav>
+        <!-- Navigation bar with links to different pages on the website beside search bar-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a id="random-nav-link" href="#">Random Animal</a></li>
+        </ul>
+
+        <!-- Search bar to locate specific animals on the website, instead of having to scroll and browse included sortable list-->
+        <div class="search-bar">
+            <form>
+                <label for="animal-search">Search animals:</label>
+                <input id="animal-search" type="text" placeholder="Search animals..." />
+                <button type="submit">Go!</button>
+            </form>
+            <div class="search-status" role="status" aria-live="polite" hidden></div>
+        </div>
+    </nav>
+    <script>
+        const destinations = [
+            "animals/Gray_Wolf.html",
+            "animals/White_Tailed_Deer.html",
+            "animals/Cotton_Mouth_Snake.html",
+            "animals/Bobcat.html",
+            "animals/Bluegill.html",
+            "animals/Hellbender_Salamander.html",
+            "animals/Northern_Cardinal.html"
+        ];
+        const randomLink = document.getElementById("random-nav-link");
+        randomLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            const randomIndex = Math.floor(Math.random() * destinations.length);
+            window.location.href = destinations[randomIndex];
+        });
+    </script>
+</body>
+</html>
